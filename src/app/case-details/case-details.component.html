@@ -7,9 +7,9 @@
         <li><label class="label">Case Category ID:</label><span>{{case[0].CaseCategoryID}}</span></li>
         <li><label class="label">Item Count:</label><span>{{case[0].ItemCount}}</span></li>
         <li><label class="label">Score:</label><span>{{case[0].Score}}</span></li>
-        <li><label class="label">Assigned On:</label><span>{{case[0].AssignedOn}}</span></li>
+        <li><label class="label">Assigned On:</label><span>{{toDate(case[0].AssignedOn) | date: 'medium'}}</span></li>
         <li><label class="label">Work Flow Position ID:</label><span>{{case[0].WorkFlowPositionID}}</span></li>
-        <li><label class="label">Created On:</label><span>{{case[0].CreatedOn | date: 'short'}}</span></li>
+        <li><label class="label">Created On:</label><span>{{toDate(case[0].CreatedOn) | date: 'medium'}}</span></li>
         <li><label class="label">Created By User ID:</label><span>{{case[0].CreatedByUserID}}</span></li>
         <li><label class="label">Follow Up Flag:</label><span>{{case[0].FollowUpFlag}}</span></li>
         <li><label class="label">SAR Type ID:</label><span>{{case[0].SARTypeID}}</span></li>

@@ -35,6 +35,10 @@ export class CaseDetailsComponent implements OnInit, OnDestroy {
     });
   }
 
+  toDate(val: string): Date {
+    return new Date(val.replace('T', ' '));
+  }
+
   ngOnDestroy(): void {
     this.casesDataService = null;
   }
