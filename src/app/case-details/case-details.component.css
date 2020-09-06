@@ -1,0 +1,17 @@
+.case-content {
+    padding: 15px;
+    background-color: lightblue;
+    width: 600px;
+}
+
+ul.case {
+    list-style-type: none;
+}
+
+.label {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 700;
+}

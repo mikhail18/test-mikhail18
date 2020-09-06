@@ -1,0 +1,19 @@
+.cases-header, .cases-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cases-header > div {
+    border: 1px solid lightgraY;
+     padding: 4px 5px;
+    min-width: 185px;
+    background-color: lightgray;
+}
+
+a.nav-link, .cases-body > div {
+    padding: 2px 10px;
+    min-width: 180px;
+    margin-bottom: 5px;
+}
+

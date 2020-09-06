@@ -1,0 +1,28 @@
+<div class="case-content">
+    <h2>{{'CASE #' + id}}</h2>
+    <ul class="case">
+        <li><label class="label">Case ID:</label><span>{{case[0].CaseID}}</span></li>
+        <li><label class="label">Case Number:</label><span>{{case[0].CaseNumber}}</span></li>
+        <li><label class="label">Case Name:</label><span>{{case[0].CaseName.trim()}}</span></li>
+        <li><label class="label">Case Category ID:</label><span>{{case[0].CaseCategoryID}}</span></li>
+        <li><label class="label">Item Count:</label><span>{{case[0].ItemCount}}</span></li>
+        <li><label class="label">Score:</label><span>{{case[0].Score}}</span></li>
+        <li><label class="label">Assigned On:</label><span>{{case[0].AssignedOn}}</span></li>
+        <li><label class="label">Work Flow Position ID:</label><span>{{case[0].WorkFlowPositionID}}</span></li>
+        <li><label class="label">Created On:</label><span>{{case[0].CreatedOn | date: 'short'}}</span></li>
+        <li><label class="label">Created By User ID:</label><span>{{case[0].CreatedByUserID}}</span></li>
+        <li><label class="label">Follow Up Flag:</label><span>{{case[0].FollowUpFlag}}</span></li>
+        <li><label class="label">SAR Type ID:</label><span>{{case[0].SARTypeID}}</span></li>
+        <li><label class="label">Item Amount:</label><span>{{case[0].ItemAmount | currency }}</span></li>
+        <li><label class="label">Configuration Name:</label><span>{{case[0].ConfigurationName}}</span></li>
+        <li><label class="label">Client Case Label 1:</label><span>{{case[0].ClientCaseLabel1}}</span></li>
+        <li><label class="label">Client Case Label 2:</label><span>{{case[0].ClientCaseLabel2}}</span></li>
+        <li><label class="label">Client Case Label 3:</label><span>{{case[0].ClientCaseLabel3}}</span></li>
+        <li><label class="label">Client Case Label 4:</label><span>{{case[0].ClientCaseLabel4}}</span></li>
+        <li><label class="label">Client Case Label 6:</label><span>{{case[0].ClientCaseLabel6}}</span></li>
+        <li><label class="label">Case View Tab Group ID:</label><span>{{case[0].CaseViewTabGroupID}}</span></li>
+        <li><label class="label">Case Type ID:</label><span>{{case[0].CaseTypeID}}</span></li>
+        <li><label class="label">Linked Case ID:</label><span>{{case[0].LinkedCaseID}}</span></li>
+        <li><label class="label">Is Locked:</label><span>{{case[0].IsLocked ? 'YES' : 'NO'}}</span></li>
+    </ul>
+</div>

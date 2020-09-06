@@ -1,0 +1,16 @@
+  .app-toolbar {
+    border-bottom: 2px solid green;
+    height: 30px;
+    width: 100%;
+    color: red;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .btn-holder {
+      margin-left: 30px;
+      margin-right: 30px;
+      cursor: pointer;
+  }
+  
