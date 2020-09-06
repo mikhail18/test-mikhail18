@@ -1,4 +1,4 @@
-<div class="case-content">
+<div *ngIf="case && case[0]"class="case-content">
     <h2>{{'CASE #' + id}}</h2>
     <ul class="case">
         <li><label class="label">Case ID:</label><span>{{case[0].CaseID}}</span></li>

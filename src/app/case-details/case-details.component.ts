@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CasesDataService } from '../cases-data.service';
 import { Case } from '../case';
@@ -8,7 +8,7 @@ import { Case } from '../case';
   templateUrl: './case-details.component.html',
   styleUrls: ['./case-details.component.css']
 })
-export class CaseDetailsComponent implements OnInit {
+export class CaseDetailsComponent implements OnInit, OnDestroy {
   id: number;
   case: Case;
   constructor(
@@ -33,5 +33,9 @@ export class CaseDetailsComponent implements OnInit {
         }
       });
     });
+  }
+
+  ngOnDestroy(): void {
+    this.casesDataService = null;
   }
 }
